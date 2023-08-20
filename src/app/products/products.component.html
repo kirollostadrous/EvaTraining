@@ -1,1 +1,7 @@
-<p>products works!</p>
+<div>
+    <h1>{{ StoreName | uppercase}}</h1>
+    <img [src]="StoreLogo">
+    <h3 *ngIf="Discount!=='No Discount'"> 
+        We offer an explicit discount of:{{ Discount | percent }}
+    </h3>
+</div> 
